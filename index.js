@@ -13,9 +13,12 @@ let numDerrotas = 3;
 console.log(numDerrotas);
 
 
-let saldoVitorias = saldoRankeadas();
+let saldoVitorias = saldoRankeadas(numVitoras, numDerrotas);
+
 function saldoRankeadas(numVitoras,numDerrotas) {
     return numVitoras - numDerrotas;
 }
 
-"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
+
+
+console.log("O Herói tem de saldo de " + saldoVitorias + " está no nível de " + nivel);
